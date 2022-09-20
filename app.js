@@ -18,8 +18,9 @@ fs.writeFile('./index.html', pageHTML, err => {
 
 
   promptUser()
-  
+
   .then(promptProject)
+  
   .then(portfolioData => {
     const pageHTML = generatePage(portfolioData);
 
